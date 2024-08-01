@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    position: relative;
+    background-color: #14082E;
+}
+
+.card-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    width: 226px;
+    height: 100vh; /* Usa toda a altura da janela */
+    transition: right 0.3s ease; /* Transição suave */
+    display: none;
+    color: #ffff;
+}
+
+.card-nav.visible {
+    right: 0; /* Move para a posição visível */
+}
+
+
+
+/* Keyframes para a animação de entrada */
+@keyframes slideIn {
+    from {
+        right: -626px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+/* Keyframes para a animação de saída */
+@keyframes slideOut {
+    from {
+        right: 0;
+    }
+    to {
+        right: -626px;
+    }
+}
+
+/* Aplicando animação de entrada */
+.card-nav.enter {
+    animation: slideIn 0.3s forwards;
+}
+
+/* Aplicando animação de saída */
+.card-nav.leave {
+    animation: slideOut 0.3s forwards;
+}
