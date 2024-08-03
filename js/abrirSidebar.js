@@ -14,6 +14,7 @@
 
 const btnNav = document.querySelector('.chama-navbar')
 const sidebar = document.querySelector('.card-nav')
+const btnClose = document.getElementById('close-card')
 
 
 btnNav.addEventListener('click', () => {
@@ -30,3 +31,9 @@ btnNav.addEventListener('click', () => {
     }
 });
 
+btnClose.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+    sidebar.classList.remove('enter');
+    sidebar.classList.add('leave');
+    sidebar.classList.remove('visible');
+});

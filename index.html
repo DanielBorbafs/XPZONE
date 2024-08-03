@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xp Zone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
@@ -11,6 +12,7 @@
 <body>
    
     <nav class="card-nav"> 
+        <div id="close-card"> <img src="/assets/imgs/close.svg" alt="botao para fechar o sidebar"></div>
         <div class="card-nav__login">
             <img src="assets/imgs/xpzone-icon.png" alt="Logo da XPZONE">
             <p>Cadastre-se</p>
@@ -73,18 +75,31 @@
             <header class="container-lg">
                 <a class="logo"><img src="assets/imgs/xpzone-icon.png" alt=""></a>
                 <div class="header-btn">
-                    <a href="#" class="chama-navbar">Entrar</a>
-                    <a href="#" class="chama-navbar">Entrar</a>
+                    <a href="#" class="chama-navbar" id="login">Entrar</a>
+                    <a href="#">Anunciar Grátis</a>
                 
-                </div>
-                
+                </div>   
+               <div class="about">
+                    <div id="texto-alternado">>>> Compre</div>
+                    <h1>
+                    os melhores artigos gamers na sua cidade!</h1>
+                    <p class="desc">Nunca foi tão fácil conseguir aquele jogo ou console tão sonhado com a XP Zone.</p>
+                    <div class="filtro-hero">
+                        <input type="text" placeholder="Oque deseja?">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i>|</i>
+                        <p>Filtre sua cidade</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+               </div>
             </header>
-
         </section>
+    
     </main>
 
 
 
-    <script src="/js/script.js"></script>
+    <script src="/js/abrirSidebar.js"></script>
+    <script src="/js/trocarTexto.js"></script>
 </body>
 </html>
