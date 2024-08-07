@@ -55,10 +55,7 @@ body{
 main{
     padding-top: 110px;
 }
-.input1{
-    background-color: red;
-   
-}
+
 
 .CEP, .RUA{
    display: flex;
@@ -67,14 +64,41 @@ main{
    color: var(--white-color);
 }
 
+#erro > p {
+    color: red;
+    font-size: 12px;
+}
 
 input{
     background-color: #1B0B40;
     height: 40px;
     border-radius: 6px;
     border: 1px solid #7C5BA5 ;
+    color: var(--white-color);
+    padding: 12px;
 }
 
 input::placeholder{
     padding: 12px;
+}
+
+input:focus {
+    color: var(--stroke-color); /* Cor do texto quando o input está focado */
+    border-color: var(--secondary-color); /* Cor da borda quando o input está focado */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn:hover{
+    color: var(--stroke-color);
+}
+
+.btn-cadastrar{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+
 }
