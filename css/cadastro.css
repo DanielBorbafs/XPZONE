@@ -1,0 +1,80 @@
+:root{
+    --main-color: #14082E;
+    --white-color: #ffff;
+    --secondary-color: #4D3B77;
+    --third-color: #381E72;
+    --gray-color: #8B8888;
+    --stroke-color:#7C5BA5;
+    --background-gradient: linear-gradient(90deg, #E64D63 , #F88456 100%);
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-login{
+    height: 40px;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: var(--white-color);
+    
+}
+
+.btn-entrar{
+    height: 40px;
+    border: 1px solid var(--gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: #E64D63;
+    color: var(--white-color);
+    border: none;
+}
+
+.title-cadastro{
+    color: #F88456;
+    font-size: 52px;
+}
+
+main{
+    padding-top: 110px;
+}
+.input1{
+    background-color: red;
+   
+}
+
+.CEP, .RUA{
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+   color: var(--white-color);
+}
+
+
+input{
+    background-color: #1B0B40;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #7C5BA5 ;
+}
+
+input::placeholder{
+    padding: 12px;
+}
