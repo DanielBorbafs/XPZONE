@@ -1,9 +1,5 @@
 
-@import url(c);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url(responsive.css);
-@import url(sidebar.css);
-
 
 :root{
     --main-color: #14082E;
@@ -13,174 +9,136 @@
     --gray-color: #8B8888;
     --stroke-color:#7C5BA5;
     --background-gradient: linear-gradient(90deg, #E64D63 , #F88456 100%);
+    --title-color: #FC9053;
 }
 
 * {
     font-family: Open sans;
 }
 
+li{
+    list-style: none;
+}
 a {
     text-decoration: none;
 }
 
+body {
+    background-color: var(--main-color)
+}
 
-body{
+/* hero section css */
+
+#hero-section {
+    height: 100vh;
+   
+    background-image: url(/assets/imgs/kratos-section.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    background-color: #14082E;
 }
 
-.container-lg{
-    width: 1280px;
-}
-
-header{
-    display: flex;    
-    flex-direction: row;
-    justify-content: space-around;
-    height: 72px;
-}
-
-.header-btn{
+.nav-header{
     display: flex;
     align-items: center;
-    gap: 2rem;
-    height: 72px;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.header-btn a {
+.nav-header img{
+    width: 5rem;
+}
+
+.btn-login{
+    background-color: #E64D63;
+    padding: 0.5rem;
+    font-size: 14px;
+    width: 100px;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-login:hover{
+    background-color: #e64d6486;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+
+
+
+.text-hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.text-hero h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:var(--title-color) ;
+}
+
+.text-hero p{
+    font-size: 1rem;
+    color: var(--white-color);
+}
+
+input{
+    background-color: #9e9c9c15;
+    opacity: 0.40;
+    border: none;
+    width: 10rem;
+}
+
+input::placeholder{
+    color: var(--white-color);
+}
+
+input:focus{
+    border:none;
+}
+
+.search-input{
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:var(--secondary-color);
-    padding: 12px;
-    width: 120px;
-    text-align: center;
-    height: 20px;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    background-color: #9e9c9c56;
+    border-radius: 0.2rem;
+}
+
+.search-input i{
     color: var(--white-color);
-    border-radius: 5px;
 }
 
-#login{
-    background-color: transparent;
-    border: 1px solid;
-    border-radius: 5px;
+.search-input span{
+    color: var(--white-color);
+  
 }
 
-header, .hero-section {
-    min-width: 100%;
-    background-image: url(/assets/imgs/kratos-section.png);
-    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
-    background-position: center; /* Centraliza a imagem no elemento */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    height: 100vh;
-}
-
-.hero-section{
-    position: relative;
-}
-
-.about{
+.consoles-lista{
     position: absolute;
-    top: 30%;
-    left: 18%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-
-.about h1{
-    background: var(--background-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 64px;
-    width: 610px;
-    font-weight: 600;
-}
-
-#texto-alternado{
-    color: var(--white-color);
-    font-size: 64px;
-    width: 610px;
-    font-weight: 600;
-    transition: opacity 1ms ease-in-out;
-}
-
-.fade-out {
-    opacity: 0;
-}
-.fade-in {
-    opacity: 1;
-}
-
-.about p{
-    color: var(--white-color);
-    font-size: 16px;
-    font-weight: 100;
-}
-
-.filtro-hero{
-    display: flex;
-    gap: 8px;
-    padding: 1rem;
-    border: 1px solid var(--gray-color);
-    border-radius: 8px;
-    width: 400px;
+    bottom: 0;
+    display: flex; 
+    gap: 8px;  
+    justify-content: center;
     align-items: center;
 }
 
-.filtro-hero input {
-    background-color: transparent;
-    border: none;
-    height: 18px;
+.console-item img{
+    width: 5.2rem;
+    opacity: 0.5;
 }
 
-.filtro-hero input::placeholder{
-    text-align: center;
-    font-size: 1rem;
-}
-
-.filtro-hero i {
-    color: var(--white-color);
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Keyframes para a animação de entrada */
-@keyframes slideIn {
-    from {
-        right: -626px;
-    }
-    to {
-        right: 0;
-    }
-}
-
-/* Keyframes para a animação de saída */
-@keyframes slideOut {
-    from {
-        right: 0;
-    }
-    to {
-        right: -626px;
-    }
-}
-
-/* Aplicando animação de entrada */
-.card-nav.enter {
-    animation: slideIn 0.3s forwards;
-}
-
-/* Aplicando animação de saída */
-.card-nav.leave {
-    animation: slideOut 0.3s forwards;
+.console-item img:hover{
+    opacity: 1;
 }
