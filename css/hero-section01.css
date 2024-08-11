@@ -1,0 +1,115 @@
+/* hero section css */
+
+#hero-section {
+    height: 100vh;
+   
+    background-image: url(/assets/imgs/kratos-section.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-header img{
+    width: 5rem;
+}
+
+.btn-login{
+    background-color: #E64D63;
+    padding: 0.5rem;
+    font-size: 14px;
+    width: 100px;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-login:hover{
+    background-color: #e64d6486;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+
+
+
+.text-hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.text-hero h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:var(--title-color) ;
+}
+
+.text-hero p{
+    font-size: 1rem;
+    color: var(--white-color);
+}
+
+input{
+    background-color: #9e9c9c15;
+    opacity: 0.40;
+    border: none;
+    width: 10rem;
+}
+
+input::placeholder{
+    color: var(--white-color);
+}
+
+input:focus{
+    border:none;
+}
+
+.search-input{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    background-color: #9e9c9c56;
+    border-radius: 0.2rem;
+}
+
+.search-input i{
+    color: var(--white-color);
+}
+
+.search-input span{
+    color: var(--white-color);
+  
+}
+
+.consoles-lista{
+    position: absolute;
+    bottom: 0;
+    display: flex; 
+    gap: 8px;  
+    justify-content: center;
+    align-items: center;
+}
+
+.console-item img{
+    width: 5.2rem;
+    opacity: 0.5;
+}
+
+.console-item img:hover{
+    opacity: 1;
+}
