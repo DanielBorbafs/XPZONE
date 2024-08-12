@@ -1,0 +1,55 @@
+@media (min-width: 1024px) {
+    .text-hero{
+        height: 80vh;
+    }
+    .text-hero h1{
+        font-size: 52px;
+        width: 800px;
+    }
+
+    .consoles-lista{
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .console-item img{
+        width: 200px;
+        cursor: pointer;
+    }
+
+    .about{
+        
+        display: flex;
+        flex-direction: row;
+        margin-bottom: none;
+    }
+
+    .crash{
+        padding-top: 4rem;
+    }
+
+    .miles{
+        flex-direction: row-reverse;
+    }
+
+    .miles-img{
+        width: 650px;
+        
+    }
+
+    .beneficios-lista{
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .beneficios-item{
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .beneficios-item p{
+        width: 180px;
+        text-align: center;
+    }
+}
