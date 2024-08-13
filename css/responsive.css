@@ -52,4 +52,19 @@
         width: 180px;
         text-align: center;
     }
+
+    .text-gamer span {
+        text-transform: uppercase;
+        font-size: 130px;
+    }
+
+    .imgs-line-01{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .imgs-line-01 img{
+        width: 200px;
+    
+    }
 }

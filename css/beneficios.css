@@ -1,0 +1,87 @@
+
+.beneficios-lista{
+    margin-top: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.beneficios h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.beneficios-imagem{
+    background-color: var(--third-color);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.beneficios-item{
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficios-item p{
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+.gamers{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-gamer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.text-gamer h2{
+    font-size: 1.8rem;
+    color: var(--title-color);
+}
+
+.text-gamer span {
+    text-transform: uppercase;
+    font-size: 90px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+
+.imgs-line-01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.imgs-line-01 img{
+    width: 90px;
+
+}
+
+#cadastrar{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.4rem;
+    text-align: center;
+    background-color: var(--stroke-color);
+    color: var(--white-color);
+    border-radius: 4px;
+    width: 250px;
+}
